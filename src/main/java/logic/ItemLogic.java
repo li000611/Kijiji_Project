@@ -132,7 +132,9 @@ public class ItemLogic extends GenericLogic<Item, ItemDAL> {
                        }else{
                         item.setUrl(parameterMap.get(URL)[0]);
                        }
-         }
+         }else{
+              item.setUrl("dont have url");
+          }
           
         return item;
     }
@@ -149,7 +151,7 @@ public class ItemLogic extends GenericLogic<Item, ItemDAL> {
 
     @Override
     public List<?> extractDataAsList(Item e) {
-        return Arrays.asList(e.getId(), e.getUrl(), e.getDate(), e.getTitle(), e.getPrice(), e.getLocation(), e.getImage(), e.getCategory(), e.getDescription());
+        return Arrays.asList(e.getId(), e.getUrl(), e.getDate(), e.getTitle(), e.getPrice(), e.getLocation(), e.getImage().getId(), e.getCategory().getId(), e.getDescription());
 
     }
 }
