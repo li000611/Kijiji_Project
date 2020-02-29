@@ -11,6 +11,7 @@ import entity.Image;
 import entity.Item;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -22,7 +23,6 @@ import javax.servlet.http.HttpServletResponse;
 import logic.CategoryLogic;
 import logic.ImageLogic;
 import logic.ItemLogic;
-import org.apache.tomcat.jni.Directory;
 import scraper.kijiji.Kijiji;
 import scraper.kijiji.KijijiItem;
 
@@ -52,36 +52,55 @@ public class KijijiView extends HttpServlet {
             out.println("<title>Servlet CreateItem</title>");
             out.println("<link rel=\"stylesheet\"  type=\"text/css\"  href=\"style/KijijiStyle.css\">");
             out.println("</head>");
+            
             out.println("<body>");
             out.println("<div class=\"center-column\">");
             ItemLogic itl = new ItemLogic();
             List<Item> entity = itl.getAll();
             for (Item e : entity) {
                 out.println("<div class=\"item\">");
+                
                 out.println("<div class=\"image\">");
                 out.printf("<img src=\"image/%s.jpg\" style=\"max-width: 250px; max-height: 200px;\" />", e.getId());
                 out.println("</div>");
+                
                 out.println("<div class=\"details\">");
+                
                 out.println("<div class=\"title\">");
                 out.printf("<a href=\"%s\" target=\"_blank\">%s</a>", e.getUrl(), e.getTitle());
                 out.println("</div>");
+                
                 out.println("<div class=\"price\">");
+                if(e.getPrice() == null){
+                    e.setPrice(BigDecimal.ZERO);
+                }
                 out.printf("price : %s", e.getPrice().toString());
                 out.println("</div>");
+                
                 out.println("<div class=\"date\">");
                 if(e.getDate()!=null)
                 out.printf("date: %s", e.getDate().toString());
                 out.println("</div>");
+                
+                
                 out.println("<div class=\"location\">");
                 out.printf("location: %s", e.getLocation());
                 out.println("</div>");
+                
                 out.println("<div class=\"description\">");
                 out.printf("description: %s", e.getDescription());
                 out.println("</div>");
+                
+                
                 out.println("</div>");
                 out.println("</div>"); 
             }
+            
+            
                out.println("</div>");
+               out.println("</body>");
+               out.println("</html>");
+               
         }
     }
 
