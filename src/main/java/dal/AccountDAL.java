@@ -7,7 +7,7 @@ import java.util.Map;
 
 /**
  *
- * @author Shariar (Shawn) Emami
+ * @author Min Li
  */
 public class AccountDAL extends GenericDAL<Account>{
 

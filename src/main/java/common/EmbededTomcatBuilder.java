@@ -7,7 +7,7 @@ import org.apache.catalina.startup.Tomcat;
 
 /**
  *
- * @author Shariar (Shawn) Emami
+ * @author Min Li
  */
 public class EmbededTomcatBuilder {
 

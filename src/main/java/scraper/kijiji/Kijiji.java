@@ -9,7 +9,7 @@ import org.jsoup.select.Elements;
 
 /**
  *
- * @author Shariar (Shawn) Emami
+ * @author Min Li 
  */
 public class Kijiji {
 

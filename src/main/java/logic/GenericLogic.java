@@ -1,15 +1,14 @@
 package logic;
 
-import common.ValidationException;
+
 import dal.GenericDAL;
 import java.util.List;
 import java.util.Map;
-import java.util.function.Function;
 import java.util.function.Supplier;
 
 /**
  *
- * @author Shariar (Shawn) Emami
+ * @author Min Li
  * @param <E> - entity type
  * @param <T> - DAO type
  */

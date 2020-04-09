@@ -2,7 +2,7 @@ package common;
 
 /**
  *
- * @author Shariar (Shawn) Emami
+ * @author Min Li
  */
 public class ValidationException extends RuntimeException {
 

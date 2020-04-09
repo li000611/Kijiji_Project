@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author Shariar (Shawn) Emami
+ * @author Min Li
  */
 @WebServlet(name = "SampleForm", urlPatterns = {"/SampleForm"})
 public class SampleForm extends HttpServlet {

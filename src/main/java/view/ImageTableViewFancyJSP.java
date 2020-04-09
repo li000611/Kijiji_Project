@@ -23,7 +23,7 @@ import logic.ImageLogic;
 
 /**
  *
- * @author Shariar (Shawn) Emami
+ * @author Min Li
  */
 @WebServlet(name = "ImageTableFancyJSP", urlPatterns = {"/ImageTableFancyJSP"})
 public class ImageTableViewFancyJSP extends HttpServlet {

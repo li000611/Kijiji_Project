@@ -19,7 +19,7 @@ import logic.CategoryLogic;
 
 /**
  *
- * @author danal
+ * @author Min Li
  */
 @WebServlet(name = "CreateCategory", urlPatterns = {"/CreateCategory"})
 public class CreateCategory extends HttpServlet {

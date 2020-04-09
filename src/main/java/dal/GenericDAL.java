@@ -13,7 +13,7 @@ import javax.persistence.criteria.CriteriaQuery;
 
 /**
  * 
- * @author Shariar (Shawn) Emami
+ * @author Min Li
  * @param <T> - Entity type to be used in this DAL
  */
 public abstract class GenericDAL<T> {

@@ -19,7 +19,7 @@ import java.util.logging.Logger;
 /**
  * simple utility class for some File IO functionality
  *
- * @author Shariar
+ * @author Min Li
  */
 public final class FileUtility {
 

@@ -10,7 +10,7 @@ import java.util.function.Supplier;
 
 /**
  *
- * @author Shariar (Shawn) Emami
+ * @author Min Li
  */
 public class AccountLogic extends GenericLogic<Account,AccountDAL>{
     

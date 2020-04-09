@@ -18,7 +18,7 @@ import javax.servlet.annotation.WebListener;
  * @see https://www.deadcoderising.com/execute-code-on-webapp-startup-and-shutdown-using-servletcontextlistener/
  * @see https://docs.oracle.com/javaee/7/api/javax/servlet/ServletContextListener.html
  * 
- * @author Shariar (Shawn) Emami
+ * @author Min Li
  */
 @WebListener
 public class EMFactory implements ServletContextListener{

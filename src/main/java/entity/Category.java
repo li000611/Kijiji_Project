@@ -15,7 +15,7 @@ import javax.validation.constraints.Size;
 
 /**
  *
- * @author Shariar (Shawn) Emami
+ * @author Min Li
  */
 @Entity
 @Table(name = "category", catalog = "kijijidb", schema = "")

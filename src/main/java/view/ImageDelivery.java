@@ -18,7 +18,7 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author danal
+ * @author Min Li
  */
 @WebServlet(name = "ImageDelivery", urlPatterns = {"/image/*"})
 public class ImageDelivery extends HttpServlet {

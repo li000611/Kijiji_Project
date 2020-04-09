@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package dal;
-import static entity.Image_.url;
+
 import entity.Image;
 import java.util.HashMap;
 import java.util.List;

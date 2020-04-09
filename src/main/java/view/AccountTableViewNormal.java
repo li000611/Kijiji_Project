@@ -15,7 +15,7 @@ import javax.servlet.annotation.WebServlet;
 
 /**
  *
- * @author Shariar (Shawn) Emami
+ * @author Min Li
  */
 @WebServlet(name = "AccountTable", urlPatterns = {"/AccountTable"})
 public class AccountTableViewNormal extends HttpServlet {
