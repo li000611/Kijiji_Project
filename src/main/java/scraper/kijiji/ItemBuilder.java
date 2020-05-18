@@ -46,19 +46,22 @@ public class ItemBuilder {
         Elements date = element.getElementsByClass(ATTRIBUTE_DATE);
         Elements description = element.getElementsByClass(ATTRIBUTE_DESCRIPTION);
         
-        if (image.isEmpty()) {
-            item.setImageUrl("");
-        } else {
-            item.setImageUrl(image.get(0).child(0).attr(ATTRIBUTE_IMAGE_SRC).trim());
-        }
-        item.setUrl(URL_BASE + element.getElementsByClass(ATTRIBUTE_TITLE).get(0).child(0).attr("href").trim());
-        item.setId(element.attr(ATTRIBUTE_ID).trim());
+//         if (image.isEmpty()) {
+//             item.setImageUrl("");
+//         } else {
+//             item.setImageUrl(image.get(0).child(0).attr(ATTRIBUTE_IMAGE_SRC).trim());
+//         }
         
-        if (image.isEmpty()) {
-            item.setImageName("");
-        } else {
-            item.setImageName(image.get(0).child(0).attr(ATTRIBUTE_IMAGE_NAME).trim());
-        }
+        item.setUrl(URL_BASE + element.getElementsByClass(ATTRIBUTE_TITLE).get(0).child(0).attr("href").trim());
+        item.setImageUrl(getImageUrl());
+        item.setId(element.attr(ATTRIBUTE_ID).trim());
+        item.setImageName(getImageName());
+        
+//         if (image.isEmpty()) {
+//             item.setImageName("");
+//         } else {
+//             item.setImageName(image.get(0).child(0).attr(ATTRIBUTE_IMAGE_NAME).trim());
+//         }
         
         if (price.isEmpty()) {
             item.setPrice("");
